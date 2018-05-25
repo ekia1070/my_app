@@ -1,0 +1,44 @@
+doctype html
+html
+    head
+        title M2O Wallet
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        link(rel='stylesheet' href='/css/styles.css')
+
+        script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        script(type='text/javascript' src='https://cdn.rawgit.com/ethereum/web3.js/0.19.0/dist/web3.js')
+
+    body(class='login-bg')
+        div(class='header')
+            div(class='container')
+                div(class='row')
+                    div(class='col-md-12')
+                        div(class='logo')
+                            h1
+                                img(src='/images/logo2.png' width='42' height='42' style='margin-right:10px;')
+                                a(href='/') M2O Wallet
+
+        div(class='page-content container')
+            div(class='row')
+                div(class='col-md-4 col-md-offset-4')
+                    div(class='login-wrapper')
+                        form(class='form-login' method='post' action='/login' id='form-login')
+                            div(class='box')
+                                div(class='content-wrap')
+                                    h6 Login Failed
+                                    p 로그인에 실패하였습니다.<br>ID와 PW를 확인해주세요.
+                                    div(class='action')
+                                        a(href='/'): input(type='button' class='btn btn-primary signup' value='LOGIN')
+                        div(class='already')
+                            p Don't have an account yet?
+                            a(href='/auth/signup') Sign Up
+                            br
+                            p Do not remember your password?
+                            a(href='/auth/passwordfind') Find password
+        footer
+            div(class='container')
+                div(class='copy text-center')
+                    p Coyright by MTO ASSOCIATION in Armenia
+                    p Q&A :&nbsp;
+                        a(href='mailto:support@mileageto.com') support@mileageto.com
